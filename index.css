@@ -219,6 +219,187 @@ span.stretch3 {
     transform:scale(0.6,1) translate(-105px,0px); /* W3C */
 }
 
+
+
+
+
+div.topsmall {
+	display: none;
+	width: 100%;
+	height: 50%;
+	margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+	border-bottom: solid;
+	border-width: 0px;
+	border-color: black;
+	color: white;
+	background-color: black;
+	z-index: -1;
+}
+
+div.topsmall:hover {
+	display: none;
+	color: black;
+	background-color: pink;
+}
+
+div.bottomsmall:hover {
+	display: none;
+	color: black;
+	background-color: pink;
+}
+
+div.topsmall:hover h1{
+	display: none;
+	opacity: 1;
+}
+
+div.bottomsmall:hover h1{
+	display: none;
+	opacity: 1;
+}
+
+div.bottomsmall {
+	display: none;
+	width: 100%;
+	height: 50%;
+	margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  color: white;
+	background-color: black;
+}
+
+h1.topsmall {
+	display: none;
+	opacity: 0.1;
+	font-family: 'galaxie';
+	font-size: 7.5vw;
+  overflow: visible;
+  transform: translateY(20px);
+}
+
+h1.bottomsmall {
+	display: none;
+	opacity: 0.1;
+	font-family: 'sporting';
+	font-size: 7.5vw;
+  overflow: visible;
+  transform: translateY(-20px);
+}
+
+span.boxsmall {
+	display: none;
+	 animation: colorchanged 100s infinite; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+      -webkit-animation: colorchanged 100s infinite; /* Chrome and Safari */
+	pointer-events: none;
+	width: 250px;
+	height: 250px;
+	background-color: white;
+	mix-blend-mode: difference;
+	 position: absolute;
+  transform: translate(-50%, -50%);
+    -webkit-filter: blur(80px);
+  -moz-filter: blur(80px);
+  -o-filter: blur(80px);
+  -ms-filter: blur(80px);
+  filter: blur(80px);
+}
+
+span.stretch {
+    display:inline-block;
+    -webkit-transform:scale(1.6,2); /* Safari and Chrome */
+    -moz-transform:scale(1.6,2); /* Firefox */
+    -ms-transform:scale(1.6,2); /* IE 9 */
+    -o-transform:scale(1.6,2); /* Opera */
+    transform:scale(1.6,2); /* W3C */
+}
+
+span.stretch2 {
+    display:inline-block;
+    -webkit-transform:scale(4,2); /* Safari and Chrome */
+    -moz-transform:scale(4,2); /* Firefox */
+    -ms-transform:scale(4,2); /* IE 9 */
+    -o-transform:scale(4,2); /* Opera */
+    transform:scale(4,2); /* W3C */
+}
+
+div.namesmall {
+	display: none;
+	pointer-events: none;
+	z-index: 1;
+	float: all;
+	clear: all;
+	color: black;
+	text-shadow: 0 0 5em pink, 0 0 5em pink;
+	background-color: transparent;
+	mix-blend-mode: normal;
+	opacity: 1;
+	position: absolute;
+	display: none;
+	width: 200px;
+	height: 100px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	transform: translateY(50vh);
+	margin-top: -45px;
+}
+
+img.namesmall {
+	display: none;
+	pointer-events: none;
+	float: all;
+	clear: all;
+	mix-blend-mode: multiply;
+	border: solid;
+	border-color: black;
+	border-width: 4px;
+	opacity: 1;
+	position: absolute;
+	width: 100px;
+	height: 40px;
+	margin: 0 auto;
+	left: 0.5;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	transform: translate(-10px, 10px);
+}
+
+h1.namesmall {
+	display: none;
+	padding-top: 10px;
+	font-family: 'galaxie';
+	font-size: 60px;
+	line-height: 45px;
+  overflow: visible;
+      display:inline-block;
+    -webkit-transform:scale(1.1,1); /* Safari and Chrome */
+    -moz-transform:scale(1.1,1); /* Firefox */
+    -ms-transform:scale(1.1,1); /* IE 9 */
+    -o-transform:scale(1.1,1); /* Opera */
+    transform:scale(1.1,1); /* W3C */
+
+}
+
+span.stretch3 {
+    display:inline-block;
+    -webkit-transform:scale(0.6,1); /* Safari and Chrome */
+    -moz-transform:scale(0.6,1); /* Firefox */
+    -ms-transform:scale(0.6,1); /* IE 9 */
+    -o-transform:scale(0.6,1); /* Opera */
+    transform:scale(0.6,1) translate(-105px,0px); /* W3C */
+}
+
 @media screen and (min-width: 1500px) {
 }
 @media screen and (max-width: 750px) {
@@ -233,193 +414,7 @@ span.stretch3 {
      background-color: white;
 }
 
-img.name {
-	animation: fade 5s infinite;
-	-webkit-animation: fade 5s infinite;
-	display: all;
-	pointer-events: none;
-	z-index: 1;
-	float: all;
-	clear: all;
-	color: black;
-	text-shadow: 0 0 5em pink, 0 0 5em pink;
-	background-color: transparent;
-	mix-blend-mode: multiply;
-	opacity: 1;
-	border: none;
-	position: absolute;
-	width: 200px;
-	height: 90px;
-	margin: 0 auto;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	transform: translateY(20vh);
-
-}
-}
 
 
-div.top {
-	
-	width: 100%;
-	height: 50%;
-	margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-	border-bottom: solid;
-	border-width: 0px;
-	border-color: black;
-	color: black;
-	background-color: pink;
-	z-index: -1;
-}
-
-div.top:hover {
-	color: black;
-	background-color: pink;
-}
-
-div.bottom:hover {
-	color: pink;
-	background-color: black;
-}
-
-div.top:hover h1{
-	opacity: 1;
-}
-
-div.bottom:hover h1{
-	opacity: 1;
-}
-
-div.bottom {
-	
-	width: 100%;
-	height: 50%;
-	margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  color: pink;
-	background-color: black;
-}
-
-h1.top {
-	animation: glassess 5s infinite;
-	-webkit-animation: glassess 5s infinite;
-	pointer-events: all;
-	opacity: 1;
-	font-family: 'galaxie';
-	font-size: 7.5vw;
-  overflow: visible;
-  transform: translateY(20px);
-}
-
-h1.bottom {
-	animation: glasses 5s infinite;
-	-webkit-animation: glasses 5s infinite;
-	pointer-events: all;
-	opacity: 1;
-	font-family: 'sporting';
-	font-size: 7.5vw;
-  overflow: visible;
-  transform: translateY(-20px);
-}
-
-
-    @keyframes glasses
-    {
-       0%    {webkit-filter: blur(5px);
-           -moz-filter: blur(5px);
-           -o-filter: blur(5px);
-           -ms-filter: blur(5px);
-           filter: blur(5px);}
-        50%   {webkit-filter: blur(0px);
-           -moz-filter: blur(0px);
-           -o-filter: blur(0px);
-           -ms-filter: blur(0px);
-           filter: blur(0px);}
-         100%   {webkit-filter: blur(5px);
-           -moz-filter: blur(5px);
-           -o-filter: blur(5px);
-           -ms-filter: blur(5px);
-           filter: blur(5px);}     
-	}
-
-	@-webkit-keyframes glasses
-    {
-       0%    {webkit-filter: blur(5px);
-           -moz-filter: blur(5px);
-           -o-filter: blur(5px);
-           -ms-filter: blur(5px);
-           filter: blur(5px);}
-        50%   {webkit-filter: blur(0px);
-           -moz-filter: blur(0px);
-           -o-filter: blur(0px);
-           -ms-filter: blur(0px);
-           filter: blur(0px);}
-         100%   {webkit-filter: blur(5px);
-           -moz-filter: blur(5px);
-           -o-filter: blur(5px);
-           -ms-filter: blur(5px);
-           filter: blur(5px);}     
-	}
-
-	 @keyframes glassess
-    {
-       0%    {webkit-filter: blur(0px);
-           -moz-filter: blur(0px);
-           -o-filter: blur(0px);
-           -ms-filter: blur(0px);
-           filter: blur(0px);}
-        50%   {webkit-filter: blur(5px);
-           -moz-filter: blur(5px);
-           -o-filter: blur(5px);
-           -ms-filter: blur(5px);
-           filter: blur(5px);}
-         100%   {webkit-filter: blur(0px);
-           -moz-filter: blur(0px);
-           -o-filter: blur(0px);
-           -ms-filter: blur(0px);
-           filter: blur(0px);}     
-	}
-
-	@-webkit-keyframes glassess
-    {
-       0%    {webkit-filter: blur(0px);
-           -moz-filter: blur(0px);
-           -o-filter: blur(0px);
-           -ms-filter: blur(0px);
-           filter: blur(0px);}
-        50%   {webkit-filter: blur(5px);
-           -moz-filter: blur(5px);
-           -o-filter: blur(5px);
-           -ms-filter: blur(5px);
-           filter: blur(5px);}
-         100%   {webkit-filter: blur(0px);
-           -moz-filter: blur(0px);
-           -o-filter: blur(0px);
-           -ms-filter: blur(0px);
-           filter: blur(0px);}     
-	}
-
-	@keyframes fade
-    {
-       0%    {opacity: 0;}
-        50%   {opacity: 1;}
-         100%   {opacity: 0}     
-	}
-
-	@-webkit-keyframes fade
-    {
-       0%    {opacity: 0;}
-        50%   {opacity: 1;}
-         100%   {opacity: 0}     
-	}
 
 }
