@@ -1,0 +1,240 @@
+@font-face {
+  font-family: 'savate';
+  src: url(savate-regular-webfont.ttf);
+}
+@font-face {
+  font-family: 'savate-i';
+  src: url(savate-italique-webfont.ttf);
+}
+@font-face {
+  font-family: 'sporting';
+  src: url(sporting_grotesque_normal.otf);
+}
+@font-face {
+  font-family: 'circle';
+  src: url(Circular_Regular.ttf);
+}
+@font-face {
+  font-family: 'galaxie';
+  src: url(GalaxieCopernicus-Book.ttf);
+}
+@font-face {
+  font-family: 'elephant';
+  src: url(Elephant-Medium.ttf);
+}
+
+
+html {
+  overflow: hidden;
+  height: 100%;
+}
+body {
+  overflow: auto;
+  height: 100%;
+     background-image: url();
+     background-size: 100%;
+     background-color: white;
+}
+
+div.top {
+	width: 100%;
+	height: 50%;
+	margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+	border-bottom: solid;
+	border-width: 0px;
+	border-color: black;
+	color: white;
+	background-color: black;
+	z-index: -1;
+}
+
+div.top:hover {
+	color: black;
+	background-color: pink;
+}
+
+div.bottom:hover {
+	color: black;
+	background-color: pink;
+}
+
+div.top:hover h1{
+	opacity: 1;
+}
+
+div.bottom:hover h1{
+	opacity: 1;
+}
+
+div.bottom {
+	width: 100%;
+	height: 50%;
+	margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  color: white;
+	background-color: black;
+}
+
+h1.top {
+	opacity: 0.1;
+	font-family: 'galaxie';
+	font-size: 7.5vw;
+  overflow: visible;
+  transform: translateY(20px);
+}
+
+h1.bottom {
+	opacity: 0.1;
+	font-family: 'sporting';
+	font-size: 7.5vw;
+  overflow: visible;
+  transform: translateY(-20px);
+}
+
+span.box {
+	 animation: colorchange 100s infinite; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+      -webkit-animation: colorchange 100s infinite; /* Chrome and Safari */
+	pointer-events: none;
+	width: 250px;
+	height: 250px;
+	background-color: white;
+	mix-blend-mode: difference;
+	 position: absolute;
+  transform: translate(-50%, -50%);
+    -webkit-filter: blur(80px);
+  -moz-filter: blur(80px);
+  -o-filter: blur(80px);
+  -ms-filter: blur(80px);
+  filter: blur(80px);
+}
+
+ @keyframes colorchange
+    {
+      0%   {background: pink;}
+    
+      70%  {background: white;}
+      
+      100% {background: pink;}
+    }
+
+    @-webkit-keyframes colorchange 
+    {
+        0%   {background: pink;}
+    
+      70%  {background: white;}
+      
+      100% {background: pink;}
+    }
+
+span.stretch {
+    display:inline-block;
+    -webkit-transform:scale(1.6,2); /* Safari and Chrome */
+    -moz-transform:scale(1.6,2); /* Firefox */
+    -ms-transform:scale(1.6,2); /* IE 9 */
+    -o-transform:scale(1.6,2); /* Opera */
+    transform:scale(1.6,2); /* W3C */
+}
+
+span.stretch2 {
+    display:inline-block;
+    -webkit-transform:scale(4,2); /* Safari and Chrome */
+    -moz-transform:scale(4,2); /* Firefox */
+    -ms-transform:scale(4,2); /* IE 9 */
+    -o-transform:scale(4,2); /* Opera */
+    transform:scale(4,2); /* W3C */
+}
+
+div.name {
+	pointer-events: none;
+	z-index: 1;
+	float: all;
+	clear: all;
+	color: black;
+	text-shadow: 0 0 5em pink, 0 0 5em pink;
+	background-color: transparent;
+	mix-blend-mode: normal;
+	opacity: 1;
+	position: absolute;
+	display: none;
+	width: 200px;
+	height: 100px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	transform: translateY(50vh);
+	margin-top: -45px;
+}
+
+img.name {
+	pointer-events: none;
+	float: all;
+	clear: all;
+	mix-blend-mode: multiply;
+	border: solid;
+	border-color: black;
+	border-width: 4px;
+	opacity: 1;
+	position: absolute;
+	width: 100px;
+	height: 40px;
+	margin: 0 auto;
+	left: 0.5;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	transform: translate(-10px, 10px);
+}
+
+h1.name {
+	padding-top: 10px;
+	font-family: 'galaxie';
+	font-size: 60px;
+	line-height: 45px;
+  overflow: visible;
+      display:inline-block;
+    -webkit-transform:scale(1.1,1); /* Safari and Chrome */
+    -moz-transform:scale(1.1,1); /* Firefox */
+    -ms-transform:scale(1.1,1); /* IE 9 */
+    -o-transform:scale(1.1,1); /* Opera */
+    transform:scale(1.1,1); /* W3C */
+
+}
+
+span.stretch3 {
+    display:inline-block;
+    -webkit-transform:scale(0.6,1); /* Safari and Chrome */
+    -moz-transform:scale(0.6,1); /* Firefox */
+    -ms-transform:scale(0.6,1); /* IE 9 */
+    -o-transform:scale(0.6,1); /* Opera */
+    transform:scale(0.6,1) translate(-105px,0px); /* W3C */
+}
+
+@media screen and (min-width: 1500px) {
+  div.box {
+    width: 20%;
+    height: 8%;
+  }
+}
+@media screen and (max-width: 650px) {
+  div.box {
+    width: 90%;
+    position: fixed;
+    background-color: white;
+  }
+  body {
+  overflow: auto;
+  height: 100%;
+     background-image: url();
+     background-size: 100%;
+     background-color: white;
+}
