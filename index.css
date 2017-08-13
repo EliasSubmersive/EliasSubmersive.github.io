@@ -234,6 +234,8 @@ span.stretch3 {
 }
 
 img.name {
+	animation: fade 5s infinite;
+	-webkit-animation: fade 5s infinite;
 	display: all;
 	pointer-events: none;
 	z-index: 1;
@@ -253,8 +255,8 @@ img.name {
 	right: 0;
 	top: 0;
 	bottom: 0;
-	transform: translateY(50vh);
-	margin-top: -30px;
+	transform: translateY(20vh);
+
 }
 }
 
@@ -404,6 +406,20 @@ h1.bottom {
            -o-filter: blur(0px);
            -ms-filter: blur(0px);
            filter: blur(0px);}     
+	}
+
+	@keyframes fade
+    {
+       0%    {opacity: 0;}
+        50%   {opacity: 1;}
+         100%   {opacity: 0}     
+	}
+
+	@-webkit-keyframes fade
+    {
+       0%    {opacity: 0;}
+        50%   {opacity: 1;}
+         100%   {opacity: 0}     
 	}
 
 }
