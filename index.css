@@ -403,9 +403,7 @@ span.stretch3 {
 @media screen and (min-width: 1500px) {
 }
 @media screen and (max-width: 699px) {
-  span.box {
-    display: none;
-  }
+
   body {
   overflow: auto;
   height: 100%;
