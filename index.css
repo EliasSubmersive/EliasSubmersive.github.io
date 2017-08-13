@@ -234,7 +234,28 @@ span.stretch3 {
 }
 
 img.name {
-	display: none;
+	display: all;
+	pointer-events: none;
+	z-index: 1;
+	float: all;
+	clear: all;
+	color: black;
+	text-shadow: 0 0 5em pink, 0 0 5em pink;
+	background-color: transparent;
+	mix-blend-mode: multiply;
+	opacity: 1;
+	border: none;
+	position: absolute;
+	width: 200px;
+	height: 90px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	transform: translateY(50vh);
+	margin-top: -30px;
+}
 }
 
 
