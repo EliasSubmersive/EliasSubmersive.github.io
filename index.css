@@ -220,16 +220,10 @@ span.stretch3 {
 }
 
 @media screen and (min-width: 1500px) {
-  div.box {
-    width: 20%;
-    height: 8%;
-  }
 }
-@media screen and (max-width: 650px) {
-  div.box {
-    width: 90%;
-    position: fixed;
-    background-color: white;
+@media screen and (max-width: 750px) {
+  span.box {
+    display: none;
   }
   body {
   overflow: auto;
@@ -237,4 +231,158 @@ span.stretch3 {
      background-image: url();
      background-size: 100%;
      background-color: white;
+}
+
+img.name {
+	display: none;
+}
+
+
+div.top {
+	
+	width: 100%;
+	height: 50%;
+	margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+	border-bottom: solid;
+	border-width: 0px;
+	border-color: black;
+	color: black;
+	background-color: pink;
+	z-index: -1;
+}
+
+div.top:hover {
+	color: black;
+	background-color: pink;
+}
+
+div.bottom:hover {
+	color: pink;
+	background-color: black;
+}
+
+div.top:hover h1{
+	opacity: 1;
+}
+
+div.bottom:hover h1{
+	opacity: 1;
+}
+
+div.bottom {
+	
+	width: 100%;
+	height: 50%;
+	margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  color: pink;
+	background-color: black;
+}
+
+h1.top {
+	animation: glassess 5s infinite;
+	-webkit-animation: glassess 5s infinite;
+	pointer-events: none;
+	opacity: 1;
+	font-family: 'galaxie';
+	font-size: 7.5vw;
+  overflow: visible;
+  transform: translateY(20px);
+}
+
+h1.bottom {
+	animation: glasses 5s infinite;
+	-webkit-animation: glasses 5s infinite;
+	pointer-events: none;
+	opacity: 1;
+	font-family: 'sporting';
+	font-size: 7.5vw;
+  overflow: visible;
+  transform: translateY(-20px);
+}
+
+
+    @keyframes glasses
+    {
+       0%    {webkit-filter: blur(5px);
+           -moz-filter: blur(5px);
+           -o-filter: blur(5px);
+           -ms-filter: blur(5px);
+           filter: blur(5px);}
+        50%   {webkit-filter: blur(0px);
+           -moz-filter: blur(0px);
+           -o-filter: blur(0px);
+           -ms-filter: blur(0px);
+           filter: blur(0px);}
+         100%   {webkit-filter: blur(5px);
+           -moz-filter: blur(5px);
+           -o-filter: blur(5px);
+           -ms-filter: blur(5px);
+           filter: blur(5px);}     
+	}
+
+	@-webkit-keyframes glasses
+    {
+       0%    {webkit-filter: blur(5px);
+           -moz-filter: blur(5px);
+           -o-filter: blur(5px);
+           -ms-filter: blur(5px);
+           filter: blur(5px);}
+        50%   {webkit-filter: blur(0px);
+           -moz-filter: blur(0px);
+           -o-filter: blur(0px);
+           -ms-filter: blur(0px);
+           filter: blur(0px);}
+         100%   {webkit-filter: blur(5px);
+           -moz-filter: blur(5px);
+           -o-filter: blur(5px);
+           -ms-filter: blur(5px);
+           filter: blur(5px);}     
+	}
+
+	 @keyframes glassess
+    {
+       0%    {webkit-filter: blur(0px);
+           -moz-filter: blur(0px);
+           -o-filter: blur(0px);
+           -ms-filter: blur(0px);
+           filter: blur(0px);}
+        50%   {webkit-filter: blur(5px);
+           -moz-filter: blur(5px);
+           -o-filter: blur(5px);
+           -ms-filter: blur(5px);
+           filter: blur(5px);}
+         100%   {webkit-filter: blur(0px);
+           -moz-filter: blur(0px);
+           -o-filter: blur(0px);
+           -ms-filter: blur(0px);
+           filter: blur(0px);}     
+	}
+
+	@-webkit-keyframes glassess
+    {
+       0%    {webkit-filter: blur(0px);
+           -moz-filter: blur(0px);
+           -o-filter: blur(0px);
+           -ms-filter: blur(0px);
+           filter: blur(0px);}
+        50%   {webkit-filter: blur(5px);
+           -moz-filter: blur(5px);
+           -o-filter: blur(5px);
+           -ms-filter: blur(5px);
+           filter: blur(5px);}
+         100%   {webkit-filter: blur(0px);
+           -moz-filter: blur(0px);
+           -o-filter: blur(0px);
+           -ms-filter: blur(0px);
+           filter: blur(0px);}     
+	}
+
 }
