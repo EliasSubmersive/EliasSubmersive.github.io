@@ -107,12 +107,30 @@ div.images {
 }
 
 img.deantoni {
-	opacity: 0.5;
+	opacity: 1;
 	width: 50vw;
 	margin-left: 40vw;
 	clear: all;
 	float: all;
-	box-shadow: 0px 0px 200px pink;
+	box-shadow: 0px 0px 200px grey;
+}
+
+img.deantoni2 {
+	opacity: 1;
+	width: 50vw;
+	margin-left: 10vw;
+	clear: all;
+	float: all;
+	box-shadow: 0px 0px 200px grey;
+}
+
+img.deantoni3 {
+	opacity: 1;
+	width: 50vw;
+	margin-left: 40vw;
+	clear: all;
+	float: all;
+	box-shadow: 0px 0px 200px grey;
 }
 
 span.smaller {
@@ -247,12 +265,30 @@ div.images {
 }
 
 img.deantoni {
-	opacity: 0.8;
-	width: 100%;
-	margin-left: 0vw;
+	opacity: 1;
+	width: 90%;
+	margin-left: 2vw;
 	clear: all;
 	float: all;
-	box-shadow: 0px 20px 100px pink;
+	box-shadow: 0px 20px 100px grey;
+}
+img.deantoni2 {
+	opacity: 1;
+	width: 90%;
+	margin-left: 8vw;
+	margin-top: 3vw;
+	clear: all;
+	float: all;
+	box-shadow: 0px 20px 100px grey;
+}
+img.deantoni3 {
+	opacity: 1;
+	width: 90%;
+	margin-left: 2vw;
+	margin-top: 3vw;
+	clear: all;
+	float: all;
+	box-shadow: 0px 20px 100px grey;
 }
 
 span.smaller {
