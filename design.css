@@ -1,0 +1,375 @@
+@font-face {
+  font-family: 'savate';
+  src: url(savate-regular-webfont.ttf);
+}
+@font-face {
+  font-family: 'savate-i';
+  src: url(savate-italique-webfont.ttf);
+}
+@font-face {
+  font-family: 'sporting';
+  src: url(sporting_grotesque_normal.otf);
+}
+@font-face {
+  font-family: 'circle';
+  src: url(Circular_Regular.ttf);
+}
+@font-face {
+  font-family: 'galaxie';
+  src: url(GalaxieCopernicus-Book.ttf);
+}
+@font-face {
+  font-family: 'elephant';
+  src: url(Elephant-Medium.ttf);
+}
+
+
+html {
+  overflow: auto;
+  height: 100%;
+}
+body {
+  overflow: auto;
+  height: 100%;
+  background-size: 100%;
+  background-color: pink;
+}
+
+div.all {
+background-color: pink;
+height: 100%;
+width: 100%;
+}
+
+div.menu {
+	color: white;
+	background: black;
+	display: block;
+	position: fixed;
+	margin: auto;
+	top: 0;
+	bottom: 1;
+	left: 0;
+	right: 0;
+	justify-content: center;
+	width: 100px;
+	height: 50px;
+	z-index: 3;
+}
+
+h1.menu { 
+	margin-top: 20px;
+	opacity: 1;
+	font-family: 'sporting';
+	font-size: 12px;
+  overflow: visible;
+  color: white;
+  text-align: center;
+}
+
+div.title {
+	background: pink; 
+}
+div.title2 {
+	background: pink; 
+	padding-bottom: 1vw;
+}
+
+h1.title {
+	background: pink; 
+	opacity: 0.05;
+	font-family: 'galaxie';
+	font-size: 7.5vw;
+  overflow: visible;
+  color: black;
+  text-align: right;
+}
+
+h1.textleft {
+	display: inline-block;
+	margin-left: 60%;
+	padding-top: 5vw;
+	color: black;
+	background-color: pink;
+	line-height: 2.5vw;
+	opacity: 1;
+	font-family: 'sporting';
+	font-size: 1.75vw;
+	border-bottom: solid;
+	border-color: white;
+	border-width: 3px;
+    overflow: visible;
+}
+
+div.images {
+	width: 100%;
+	padding-top: 1vw;
+	padding-bottom: 3vw;
+	background: pink;
+}
+
+img.coin {
+	width: 25vw;
+	padding-left: 0vw;
+	clear: all;
+	float: all;
+}
+img.ceno {
+	mix-blend-mode: normal;
+	width: 30vw;
+	margin-left: 65vw;
+	margin-top: 15px;
+	clear: all;
+	float: all;
+	box-shadow: -15px 15px 50px black;
+}
+div.ceno {
+	background-image: url('ceno_logo.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 50%;
+	mix-blend-mode: normal;
+	margin-top: -5vw;
+	width: 100%;
+	height: 35vw;
+	clear: all;
+	float: all;
+}
+h1.description {
+	margin-top: -5vw;
+	font-family: 'galaxie';
+	font-size: 1.5vw;
+	width: 60%;
+	color: black;
+	margin-left: 5vw;
+	line-height: 2vw;
+	padding-bottom: 2vw;
+}
+
+div.end {
+	width: 100%;
+	background: white;
+    list-style:none;
+    margin:0;
+    padding:0;
+    color: black;
+    box-shadow: 0px 5px 60px black;
+}
+div.end li{
+    display:inline;
+}
+div.end li{
+    display:inline-block;
+    padding:10px;
+}
+ul {
+	 display: flex;
+    align-items: stretch; /* Default */
+    justify-content: space-between;
+}
+li {
+	display: flex;
+    align-items: stretch; /* Default */
+    justify-content: space-between;
+	font-family: 'sporting';
+	font-size: 1vw;
+}
+a.end {
+	text-decoration: none;
+	color: black;
+	cursor: crosshair;
+}
+
+span.smaller {
+	font-size: 10vw;
+}
+
+span.box {
+	pointer-events: none;
+	width: 75px;
+	height: 75px;
+	background: pink;
+	mix-blend-mode: difference;
+	 position: absolute;
+  transform: translate(-50%, -50%);
+    -webkit-filter: blur(20px);
+  -moz-filter: blur(20px);
+  -o-filter: blur(20px);
+  -ms-filter: blur(20px);
+  filter: blur(20px);
+  z-index: 1;
+}
+
+
+
+
+
+@media screen and (max-width: 750px) {
+
+div.all {
+background-color: pink;
+height: 100%;
+width: 100%;
+}
+
+div.menu {
+	color: white;
+	background: black;
+	display: block;
+	position: fixed;
+	margin: auto 0;
+	top: 0;
+	bottom: 1;
+	left: 1;
+	right: 0;
+	justify-content: center;
+	width: 100px;
+	height: 50px;
+	z-index: 3;
+}
+
+h1.menu { 
+	margin-top: 20px;
+	opacity: 1;
+	font-family: 'sporting';
+	font-size: 12px;
+  overflow: visible;
+  color: white;
+  text-align: center;
+}
+
+div.title {
+	background: pink; 
+}
+div.title2 {
+	background: pink; 
+	padding-bottom: 1vw;
+}
+
+h1.title {
+	background: pink; 
+	opacity: 0.05;
+	font-family: 'galaxie';
+	font-size: 15.5vw;
+  overflow: visible;
+  color: black;
+  text-align: right;
+}
+
+h1.textleft {
+	display: inline-block;
+	margin-left: 0%;
+	padding-top: 10vw;
+	color: black;
+	background-color: pink;
+	line-height: 6.5vw;
+	opacity: 1;
+	font-family: 'sporting';
+	font-size: 6vw;
+	border-bottom: solid;
+	border-color: white;
+	border-width: 3px;
+    overflow: visible;
+}
+
+div.images {
+	width: 100%;
+	padding-top: 5vw;
+	padding-bottom: 5vw;
+	background: pink;
+}
+
+img.coin {
+	width: 65vw;
+	margin-left: -40vw;
+	clear: all;
+	float: all;
+}
+img.ceno {
+	mix-blend-mode: normal;
+	width: 60vw;
+	margin-left: 30vw;
+	margin-top: 5px;
+	clear: all;
+	float: all;
+	box-shadow: -15px 15px 50px black;
+}
+div.ceno {
+	background-image: url('ceno_logo.png');
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: 80%;
+	mix-blend-mode: normal;
+	margin-top: -5vw;
+	width: 100%;
+	height: 95vw;
+	clear: all;
+	float: all;
+}
+h1.description {
+	margin-top: -20vw;
+	font-family: 'galaxie';
+	font-size: 4.5vw;
+	width: 90%;
+	color: black;
+	margin-left: 5vw;
+	line-height: 4.5vw;
+	padding-bottom: 4vw;
+}
+
+div.end {
+	width: 100%;
+	background: white;
+    list-style:none;
+    margin:0;
+    padding:0;
+    color: black;
+    box-shadow: 0px 5px 60px black;
+}
+div.end li{
+    display:inline;
+}
+div.end li{
+    display:inline-block;
+    padding:10px;
+}
+ul {
+	 display: flex;
+    align-items: stretch; /* Default */
+    justify-content: space-between;
+}
+li {
+	display: flex;
+    align-items: stretch; /* Default */
+    justify-content: space-between;
+	font-family: 'sporting';
+	font-size: 3vw;
+}
+a.end {
+	text-decoration: none;
+	color: black;
+	cursor: crosshair;
+}
+
+span.smaller {
+	font-size: 14vw;
+}
+
+span.box {
+	pointer-events: none;
+	width: 75px;
+	height: 75px;
+	background: pink;
+	mix-blend-mode: difference;
+	 position: absolute;
+  transform: translate(-50%, -50%);
+    -webkit-filter: blur(20px);
+  -moz-filter: blur(20px);
+  -o-filter: blur(20px);
+  -ms-filter: blur(20px);
+  filter: blur(20px);
+  z-index: 1;
+}
+
+
+}
