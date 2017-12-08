@@ -25,9 +25,11 @@
 
 
 html {
+  overflow: auto;
   height: 100%;
 }
 body {
+  overflow: auto;
   height: 100%;
   background-size: 100%;
   background-color: black;
@@ -132,6 +134,7 @@ img.deantoni1 {
 	float: all;
 	box-shadow: 0px 0px 100px grey;
 }
+
 span.smaller {
 	font-size: 10vw;
 }
@@ -263,6 +266,32 @@ div.images {
 	background: black;
 }
 
+img.deantoni {
+	opacity: 1;
+	width: 90%;
+	margin-left: 2vw;
+	clear: all;
+	float: all;
+	box-shadow: 0px 20px 100px grey;
+}
+img.deantoni2 {
+	opacity: 1;
+	width: 90%;
+	margin-left: 8vw;
+	margin-top: 3vw;
+	clear: all;
+	float: all;
+	box-shadow: 0px 20px 100px grey;
+}
+img.deantoni1 {
+	opacity: 1;
+	width: 90%;
+	margin-left: 2vw;
+	margin-top: 3vw;
+	clear: all;
+	float: all;
+	box-shadow: 0px 20px 100px grey;
+}
 
 span.smaller {
 	font-size: 16.5vw;
